@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://FisumTeshome.github.io/MusicManager",
+  "homepage": "https://FisumTeshome.github.io/MusicManager/",
 
   "dependencies": {
     "@emotion/react": "^11.13.3",
