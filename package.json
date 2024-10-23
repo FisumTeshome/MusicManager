@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "gh-pages": "^6.2.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }
