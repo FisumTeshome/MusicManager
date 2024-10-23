@@ -13,8 +13,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}> {/* Wrap App with Provider and pass in the store */}
-      <BrowserRouter> {/* Wrap App with BrowserRouter for routing */}
+    <Provider store={store}> 
+      <BrowserRouter basename="/MusicManager">
         <App />
       </BrowserRouter>
     </Provider>
