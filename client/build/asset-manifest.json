@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/FisumTeshome/MusicManager/static/css/main.4673b8db.css",
+    "main.js": "/FisumTeshome/MusicManager/static/js/main.21ad0846.js",
+    "static/js/453.419a5d54.chunk.js": "/FisumTeshome/MusicManager/static/js/453.419a5d54.chunk.js",
+    "static/media/background.jpg": "/FisumTeshome/MusicManager/static/media/background.bbe5000f2294d1cc08e6.jpg",
+    "index.html": "/FisumTeshome/MusicManager/index.html",
+    "main.4673b8db.css.map": "/FisumTeshome/MusicManager/static/css/main.4673b8db.css.map",
+    "main.21ad0846.js.map": "/FisumTeshome/MusicManager/static/js/main.21ad0846.js.map",
+    "453.419a5d54.chunk.js.map": "/FisumTeshome/MusicManager/static/js/453.419a5d54.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4673b8db.css",
+    "static/js/main.21ad0846.js"
+  ]
+}
