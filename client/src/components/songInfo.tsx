@@ -2,6 +2,7 @@
 import { css } from '@emotion/react';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Box, Button, Grid, Card, CardContent, Typography } from '@mui/material';
 import { fetchStatsStart } from '../redux/slices/songSlice';
 import { RootState } from '../redux/store';
 import '../styles/styles.css';
@@ -35,8 +36,7 @@ const SongInfo: React.FC = () => {
   useEffect(() => {
     dispatch(fetchStatsStart());
   }, [dispatch]);
-
-
+  
   if (loading) {
     return <p>Loading statistics...</p>;
   }
@@ -51,13 +51,28 @@ const SongInfo: React.FC = () => {
 
   return (
     <div css={mainContent}>
-      <h2 css={headerStyle}>Song Statistics</h2>
+      <Box
+        sx={{
+          backgroundColor: 'rgba(20, 67, 69, 0.96)',  
+          padding: 4,                
+          width: '100%',
+          maxWidth: '100%',
+          border: 2, 
+          borderRadius:'8px',
+          boxSizing: 'border-box',  
+        }}
+      >
+         <Typography variant="h3" gutterBottom
+         sx={{color:'rgba(6, 235, 252, 1)', textAlign: 'center'}}
+         >
+        Song Statistics
+      </Typography>
+      </Box>
       <ul>
         <li>Total Songs: {stats.totalSongs}</li>
         <li>Total Artists: {stats.totalArtists}</li>
         <li>Total Albums: {stats.totalAlbums}</li>
         <li>Total Genres: {stats.totalGenres}</li>
-
         <h3 css={infoStyle}>Songs per Genre:</h3>
         <ul>
           {Array.isArray(stats.songsPerGenre) ? (

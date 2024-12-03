@@ -66,7 +66,7 @@ const Home: React.FC = () => {
         >
           Add Music
         </Button>
-        <Button variant="contained" color="primary" component={Link} to="/update-music"
+        <Button variant="contained" color="primary" component={Link} to="/musicInfo"
          sx={{
             backgroundColor: 'rgba(155, 176, 242, 0.46)',
             marginBottom: 2,
@@ -77,7 +77,7 @@ const Home: React.FC = () => {
             fontWeight: 'bold', 
           }}
         >
-          Update Music
+          Music Census
         </Button>
         <Button variant="contained" color="primary" component={Link} to="/music-store"
          sx={{

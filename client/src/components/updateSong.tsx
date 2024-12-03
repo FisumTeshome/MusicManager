@@ -28,12 +28,11 @@ const UpdateSong = () => {
     try {
       await axios.put(`http://localhost:5000/api/update/${id}`, song);
       alert('Song updated successfully');
-      navigate('/');  // Redirect to the song list page after updating
+      navigate('/');  
     } catch (error) {
       console.error('Error updating song', error);
     }
   };
-
   return (
     <form onSubmit={handleSubmit}>
       <input name="title" placeholder="New Title" value={song.title} onChange={handleChange} required />

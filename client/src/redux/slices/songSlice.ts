@@ -7,7 +7,6 @@ interface Song {
   album: string;
   genre: string;
 }
-
 interface SongState {
   songs: Song[];
   loading: boolean;

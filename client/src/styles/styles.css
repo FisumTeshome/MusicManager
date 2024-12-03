@@ -14,9 +14,8 @@ p{
 .lastWord{
     font-size: 40px;
     color:#7cc2dd 
-    
-
 }
+
 h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -27,6 +26,7 @@ h2 {
     display: inline-block;
     padding-bottom: 10px;
   }
+
   h3 {
     font-size: 1.5rem;
     color: hsl(207, 94%, 50%);
@@ -42,6 +42,44 @@ h2 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 20px auto;
+  }
+  .formContainer{
+    margin-bottom: 32px;
+    background-color:rgba(187, 250, 255, 0.83);
+    justify-content: right;
+  }
+  .formPage{
+    display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+  }
+  #titleBox{
+    margin-bottom: 32px;
+    background-color:rgba(71, 149, 56, 0.24);
+    justify-content: right;
+  }
+  #titleText {
+    background-color: rgba(55, 131, 40, 0.28);  
+    padding: 32px;                
+    width: 100%;
+    max-width: 100%; 
+    border-radius:8px;
+    box-sizing: border-box;  
+  }
+  #buttonList{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding: 8px,
+  }
+  #navButton{
+    margin-bottom: 16px;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    color:rgba(0, 0, 0, 1);
+    font-weight: bold; 
   }
   form input {
     display: block;
@@ -81,12 +119,13 @@ button:hover {
   }
   .link{
     padding: 12px 24px;
+    margin-right: 20px;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
     background-color: hsl(310, 92%, 30%);
     border: none;
-    border-radius: 8px;
+    border-radius: 2px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -107,28 +146,41 @@ button:hover {
     position: relative;
     overflow: hidden;
 }
+#tableContainer{
+  display: flex;
+  
+  padding-right:50px;
+  padding-bottom:50px;
+  padding-left:150px;
+}
   table th, table td {
-    padding: 12px;
+    
+    padding: 3px;
     text-align: left;
-    border: 1px solid #ddd;
-    font-size: 16px;
-    color:#ffffff;
+    
+    font-size: 20px;
+    color:#250606;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
-  table th {
-    background-color: #757c0a;
+  table th:nth-child(1),table th:nth-child(2),table th:nth-child(3),table th:nth-child(4) {
+    background-color: #1a1b02;
     color: #fff;
     text-transform: uppercase;
   }
+table td:nth-child(1),table td:nth-child(2),table td:nth-child(3),table td:nth-child(4){
+  background-color: #ffffff;
+  border: 1px solid #350f0f;
+}
   
   /* table tr:nth-child(even) {
     background-color: hsl(41, 89%, 43%);
   } */
   ul {
+    background-color: #ffffff;
     list-style-type: square;
     margin: 20px 0;
     padding-left: 20px;
-    color: hsl(175, 81%, 68%);
+    color: hsl(175, 86%, 6%);
   }
   
   ul li {
