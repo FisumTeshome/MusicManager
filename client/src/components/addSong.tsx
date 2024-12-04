@@ -4,6 +4,7 @@ import { Box, Typography,Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import '../styles/styles.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const CreateSong = () => {
   const navigate = useNavigate();
@@ -59,14 +60,37 @@ const CreateSong = () => {
           Music Store
         </Button>
       </Box>
-      <div>
+      
     <form onSubmit={handleSubmit}>
-      <div className='formPage'><span>Music Title</span><input name="title" placeholder="Title" value={song.title} onChange={handleChange} required /></div>
-      <div className='formPage'><span>Artist Name</span><input name="artist" placeholder="Artist" value={song.artist} onChange={handleChange} required /></div>
-      <div className='formPage'><span>Album Name</span><input name="album" placeholder="Album" value={song.album} onChange={handleChange} required /></div>
-      <div className='formPage'><span>Genre Type</span><input name="genre" placeholder="Genre" value={song.genre} onChange={handleChange} required /></div>
-      <button type="submit">Create Song</button>
-    </form></div></div>
+    <div className="row mb-4">
+      <div className="col-sm-4" ><label className="form-control">Music Title</label></div>
+            <div className="col-sm-8">
+              <input  type="text"  className="form-control"  name="title"  placeholder="Title"   value={song.title}  onChange={handleChange}  required />
+            </div>
+          </div>
+          
+          <div className="row mb-4">
+          <div className="col-sm-4" ><label className="form-control">Artist Name</label></div>
+            <div className="col-sm-8">
+              <input type="text" className="form-control" name="artist" placeholder="Artist"  value={song.artist}  onChange={handleChange} required/>
+            </div>
+          </div>
+
+          <div className="row mb-4">
+          <div className="col-sm-4" ><label className="form-control">Album Name</label></div>
+            <div className="col-sm-8">
+              <input type="text" className="form-control" name="album" placeholder="Album" value={song.album} onChange={handleChange} required />
+            </div>
+          </div>
+          
+          <div className="row mb-4">
+          <div className="col-sm-4" ><label className="form-control">Genre Type</label></div>
+            <div className="col-sm-8">
+              <input type="text" className="form-control" name="genre" placeholder="Genre" value={song.genre} onChange={handleChange} required  />
+            </div>
+          </div>
+      <button className='btn btn-success' type="submit">Create Song</button>
+    </form></div>
   );
 };
 

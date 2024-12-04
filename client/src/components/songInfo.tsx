@@ -2,7 +2,8 @@
 import { css } from '@emotion/react';
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Box, Button, Grid, Card, CardContent, Typography } from '@mui/material';
+import { Box, Button,Typography } from '@mui/material';
+import { Link } from 'react-router-dom';
 import { fetchStatsStart } from '../redux/slices/songSlice';
 import { RootState } from '../redux/store';
 import '../styles/styles.css';
@@ -50,7 +51,7 @@ const SongInfo: React.FC = () => {
   }
 
   return (
-    <div css={mainContent}>
+    <div className='formContainer'>
       <Box
         sx={{
           backgroundColor: 'rgba(20, 67, 69, 0.96)',  
@@ -67,6 +68,24 @@ const SongInfo: React.FC = () => {
          >
         Song Statistics
       </Typography>
+      </Box>
+      <Box id="buttonList">
+        <Button id="navButton" component={Link} to="/"
+        >
+          Home
+        </Button>
+        <Button id="navButton" component={Link} to="/create" 
+        >
+          Add Music
+        </Button>
+        <Button id="navButton" component={Link} to="/musicInfo"
+        >
+          Music Cencus
+        </Button>
+        <Button id="navButton" component={Link} to="/music-store"
+        >
+          Music Store
+        </Button>
       </Box>
       <ul>
         <li>Total Songs: {stats.totalSongs}</li>

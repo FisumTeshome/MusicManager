@@ -36,10 +36,10 @@ h2 {
     letter-spacing: 0.5px;
   }
   form {
-    background-color: #fff;
+    background-color: transparent;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
     max-width: 600px;
     margin: 20px auto;
   }
@@ -54,6 +54,9 @@ h2 {
       gap: 10px;
       margin-bottom: 10px;
   }
+#updateContainer{
+  background-color: rgba(197, 144, 7, 0.38);
+}
   #titleBox{
     margin-bottom: 32px;
     background-color:rgba(71, 149, 56, 0.24);
@@ -176,7 +179,7 @@ table td:nth-child(1),table td:nth-child(2),table td:nth-child(3),table td:nth-c
     background-color: hsl(41, 89%, 43%);
   } */
   ul {
-    background-color: #ffffff;
+    background-color: #8edaec;
     list-style-type: square;
     margin: 20px 0;
     padding-left: 20px;
